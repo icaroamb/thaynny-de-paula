@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra. Thaynny de Paula | Estética Avançada em Aparecida de Goiânia</title>
+  <meta name="description" content="Estética facial e corporal em Aparecida de Goiânia com a Dra. Thaynny de Paula, biomédica esteta (CRBM-3 8018). A 700 m do Aparecida Shopping. Agende sua avaliação pelo WhatsApp.">
+  <meta name="robots" content="noindex, nofollow">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              burgundy: '#712321',
+              burgundyDark: '#551715',
+              dustyRose: '#b17779',
+              roseTint: '#f5ebeb',
+              cta: '#d06d65',
+              ctaHover: '#b85850',
+              bgLight: '#f7f7f7',
+              bgWarm: '#faf6f5',
+              text: '#212121',
+              textMuted: '#615858',
+              border: '#eae1e0'
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Nunito Sans"', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Nunito Sans', sans-serif;
+      color: #212121;
+      background-color: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4, .font-editorial {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    .btn-cta {
+      background-color: #d06d65;
+      color: #ffffff;
+      font-weight: 700;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+    .btn-cta:hover {
+      background-color: #b85850;
+      transform: translateY(-1px);
+      box-shadow: 0 8px 20px -4px rgba(208, 109, 101, 0.4);
+    }
+    .btn-outline-custom {
+      border: 1.5px solid #712321;
+      color: #712321;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .btn-outline-custom:hover {
+      background-color: #712321;
+      color: #ffffff;
+    }
+    /* Subtle accordion transition */
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+    details summary {
+      list-style: none;
+    }
+  </style>
+</head>
+<body class="selection:bg-[#b17779] selection:text-white pb-20 md:pb-0">
+
+  <!-- 1. HEADER -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-[#eae1e0] transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#inicio" class="flex items-center gap-2 group">
+        <img src="assets/logo.png" alt="Dra. Thaynny de Paula Estética Avançada" class="h-12 w-auto object-contain">
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="hidden md:flex items-center gap-8 text-[15px] font-medium text-[#615858]">
+        <a href="#tratamentos" class="hover:text-[#712321] transition-colors">Tratamentos</a>
+        <a href="#resultados" class="hover:text-[#712321] transition-colors">Resultados</a>
+        <a href="#localizacao" class="hover:text-[#712321] transition-colors">Localização</a>
+      </nav>
+
+      <!-- Desktop WhatsApp Header Button -->
+      <div class="hidden sm:block">
+        <a href="https://wa.me/5562982778088?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn-cta px-5 py-2.5 rounded-full text-sm shadow-sm gap-2">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>Agendar avaliação</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION -->
+  <section id="inicio" class="relative bg-[#ffffff] pt-8 pb-16 lg:pt-16 lg:pb-24 border-b border-[#eae1e0] overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Content -->
+        <div class="lg:col-span-7 z-10">
+          
+          <!-- Proof badge -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#f5ebeb] text-[#712321] text-xs font-semibold tracking-wide mb-6">
+            <span class="text-[#d06d65]">★</span>
+            <span>4,9 · 320 avaliações no Google</span>
+          </div>
+
+          <!-- Main H1 (Verbatim) -->
+          <h1 class="font-serif text-3xl sm:text-4xl lg:text-5xl text-[#712321] font-semibold leading-[1.18] tracking-tight mb-6">
+            Estética facial e corporal com resultado natural, em Aparecida de Goiânia
+          </h1>
+
+          <!-- Subheadline (Verbatim) -->
+          <p class="text-base sm:text-lg text-[#615858] font-normal leading-relaxed mb-8 max-w-2xl">
+            Atendimento com a Dra. Thaynny de Paula, biomédica esteta (CRBM-3 8018), há mais de 9 anos. A 700 m do Aparecida Shopping.
+          </p>
+
+          <!-- CTA and Microcopy -->
+          <div class="flex flex-col sm:flex-row sm:items-center gap-4 mb-4">
+            <a href="https://wa.me/5562982778088?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn-cta px-8 py-4 rounded-full text-base sm:text-lg shadow-md gap-3">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              <span>Agendar minha avaliação</span>
+            </a>
+          </div>
+          
+          <!-- Microcopy (Verbatim) -->
+          <p class="text-xs sm:text-sm text-[#615858] flex items-center gap-2">
+            <span class="inline-block w-2 h-2 rounded-full bg-emerald-500"></span>
+            Resposta pelo WhatsApp · Seg–Sex 8h–19h, Sáb 8h–13h
+          </p>
+
+          <!-- Clinic Highlights tag cloud -->
+          <div class="mt-8 pt-6 border-t border-[#eae1e0] grid grid-cols-3 gap-4 text-xs sm:text-sm text-[#615858]">
+            <div>
+              <p class="font-bold text-[#712321] text-lg mb-0.5 font-serif">+9 anos</p>
+              <p>de experiência</p>
+            </div>
+            <div>
+              <p class="font-bold text-[#712321] text-lg mb-0.5 font-serif">CRBM-3</p>
+              <p>Registro 8018</p>
+            </div>
+            <div>
+              <p class="font-bold text-[#712321] text-lg mb-0.5 font-serif">700 m</p>
+              <p>Aparecida Shopping</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Image with Dusty Rose Asymmetric Block -->
+        <div class="lg:col-span-5 relative flex justify-center lg:justify-end">
+          <div class="relative w-full max-w-md lg:max-w-none">
+            <!-- Asymmetric soft dusty rose background block -->
+            <div class="absolute inset-x-4 bottom-0 top-12 sm:top-16 bg-[#b17779]/15 rounded-3xl -rotate-1 transform transition-transform"></div>
+            <div class="absolute -top-3 -right-3 w-28 h-28 bg-[#f5ebeb] rounded-full blur-xl opacity-70"></div>
+            
+            <!-- Real Cutout Hero Photo -->
+            <div class="relative z-10 flex justify-center">
+              <img src="assets/01-dra-thaynny-hero-recorte.png" alt="Dra. Thaynny de Paula, biomédica esteta" class="w-full max-w-[420px] h-auto object-contain drop-shadow-xl transform hover:scale-[1.01] transition-transform duration-300">
+            </div>
+
+            <!-- Floating Trust Badge -->
+            <div class="absolute -bottom-4 left-6 z-20 bg-white/95 backdrop-blur px-4 py-2.5 rounded-xl border border-[#eae1e0] shadow-md flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-[#f5ebeb] text-[#712321] flex items-center justify-center font-bold text-xs">
+                DP
+              </div>
+              <div>
+                <p class="text-xs font-bold text-[#712321] leading-none">Dra. Thaynny de Paula</p>
+                <p class="text-[11px] text-[#615858] mt-0.5 leading-none">Biomédica Esteta · CRBM-3 8018</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. "O QUE VOCÊ QUER CUIDAR?" -->
+  <section id="tratamentos" class="py-16 lg:py-24 bg-[#faf6f5] border-b border-[#eae1e0]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title -->
+      <div class="max-w-3xl mb-12 sm:mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#b17779] block mb-2">Tratamentos personalizados</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-[#712321] font-semibold leading-tight">
+          O que você quer cuidar?
+        </h2>
+        <p class="mt-3 text-base text-[#615858]">
+          Protocolos planejados para realçar seus traços com harmonia, sem exageros.
+        </p>
+      </div>
+
+      <!-- Three Editorial Blocks with Real Photos -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Block 1: Facial Injetáveis -->
+        <div class="bg-white rounded-2xl border border-[#eae1e0] overflow-hidden shadow-sm flex flex-col justify-between group hover:border-[#b17779]/50 transition-all">
+          <div>
+            <div class="relative h-64 overflow-hidden bg-[#f5ebeb]">
+              <img loading="lazy" src="assets/05-dra-thaynny-atendimento-facial.jpg" alt="Atendimento facial com procedimento injetável" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+              <span class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-[#712321]">
+                Facial
+              </span>
+            </div>
+            <div class="p-6 sm:p-7">
+              <h3 class="font-serif text-2xl font-semibold text-[#712321] mb-4">
+                Rosto mais jovem e harmônico
+              </h3>
+              <ul class="space-y-2.5 text-sm sm:text-base text-[#615858] mb-6">
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#b17779]"></span>
+                  Preenchimentos
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#b17779]"></span>
+                  Bioestimulador de colágeno
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#b17779]"></span>
+                  Toxina botulínica
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#b17779]"></span>
+                  Fios de PDO
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-0">
+            <a href="https://wa.me/5562982778088?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20tratamento%20facial." target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-bold text-[#712321] hover:text-[#d06d65] group-hover:underline">
+              <span>Agendar avaliação</span>
+              <span class="ml-1.5 transition-transform group-hover:translate-x-1">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Block 2: Corporal & Contorno -->
+        <div class="bg-white rounded-2xl border border-[#eae1e0] overflow-hidden shadow-sm flex flex-col justify-between group hover:border-[#b17779]/50 transition-all">
+          <div>
+            <div class="relative h-64 overflow-hidden bg-[#f5ebeb]">
+              <img loading="lazy" src="assets/10-atendimento-criolipolise.jpg" alt="Paciente em sessão de criolipólise" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+              <span class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-[#712321]">
+                Corporal
+              </span>
+            </div>
+            <div class="p-6 sm:p-7">
+              <h3 class="font-serif text-2xl font-semibold text-[#712321] mb-4">
+                Contorno e gordura localizada
+              </h3>
+              <ul class="space-y-2.5 text-sm sm:text-base text-[#615858] mb-6">
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#b17779]"></span>
+                  Criolipólise
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#b17779]"></span>
+                  Harmonização de glúteos
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#b17779]"></span>
+                  Drenagem linfática
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-0">
+            <a href="https://wa.me/5562982778088?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20tratamento%20corporal." target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-bold text-[#712321] hover:text-[#d06d65] group-hover:underline">
+              <span>Agendar avaliação</span>
+              <span class="ml-1.5 transition-transform group-hover:translate-x-1">→</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Block 3: Pele & Laser -->
+        <div class="bg-white rounded-2xl border border-[#eae1e0] overflow-hidden shadow-sm flex flex-col justify-between group hover:border-[#b17779]/50 transition-all">
+          <div>
+            <div class="relative h-64 overflow-hidden bg-[#f5ebeb]">
+              <img loading="lazy" src="assets/08-equipe-limpeza-de-pele.jpg" alt="Limpeza de pele na clínica" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+              <span class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-[#712321]">
+                Pele
+              </span>
+            </div>
+            <div class="p-6 sm:p-7">
+              <h3 class="font-serif text-2xl font-semibold text-[#712321] mb-4">
+                Pele uniforme e sem manchas
+              </h3>
+              <ul class="space-y-2.5 text-sm sm:text-base text-[#615858] mb-6">
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#b17779]"></span>
+                  Laser Lavieen
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#b17779]"></span>
+                  Peeling
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#b17779]"></span>
+                  Limpeza de pele
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="px-6 pb-6 pt-0">
+            <a href="https://wa.me/5562982778088?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20tratamento%20de%20pele." target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-bold text-[#712321] hover:text-[#d06d65] group-hover:underline">
+              <span>Agendar avaliação</span>
+              <span class="ml-1.5 transition-transform group-hover:translate-x-1">→</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Collapsed Accordion "Ver todos os tratamentos" -->
+      <div class="mt-12 max-w-3xl mx-auto">
+        <details class="group bg-white rounded-xl border border-[#eae1e0] p-5 shadow-sm transition-all">
+          <summary class="flex items-center justify-between cursor-pointer font-semibold text-[#712321] select-none text-base">
+            <span>Ver todos os tratamentos</span>
+            <span class="w-7 h-7 rounded-full bg-[#f5ebeb] text-[#712321] flex items-center justify-center text-sm font-bold group-open:rotate-180 transition-transform">
+              ↓
+            </span>
+          </summary>
+          <div class="mt-6 pt-6 border-t border-[#eae1e0] text-sm text-[#615858] grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-bold text-[#712321] mb-2 font-serif">Estética facial</h4>
+              <p class="leading-relaxed">Laser Lavieen, tratamento de melasma, preenchimento labial, preenchimento de mento, bigode chinês, bioestimulador de colágeno, Radiesse, Skinbooster, toxina botulínica, harmonização facial, fios de PDO, jato de plasma, microagulhamento, peeling, limpeza de pele, lipo sem corte (papada) e remoção de verruga.</p>
+            </div>
+            <div>
+              <h4 class="font-bold text-[#712321] mb-2 font-serif">Estética corporal e nutrição</h4>
+              <p class="leading-relaxed">Criolipólise, emagrecimento, radiofrequência, massagem, drenagem linfática, endermoterapia, ventosaterapia, carboxiterapia, corrente russa, Pump Up, harmonização de glúteos, tratamento para celulite, clareamento de virilha, aplicação de varizes (PEIM) e depilação a laser. Nutricionista: Dra. Samara Ferreira (CRN1 21786).</p>
+            </div>
+          </div>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. "RESULTADOS REAIS" -->
+  <section id="resultados" class="py-16 lg:py-24 bg-white border-b border-[#eae1e0]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#b17779] block mb-2">Transformações com naturalidade</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-[#712321] font-semibold">
+          Resultados reais
+        </h2>
+        <p class="mt-3 text-base text-[#615858]">
+          Antes e depois de procedimentos feitos na clínica.
+        </p>
+      </div>
+
+      <!-- Before/After Grid (12, 13, 15) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+        
+        <!-- Caso 1: Imagem 12 (labial) -> DATA:IMAGE:IMAGE_7 -->
+        <div class="bg-[#faf6f5] rounded-2xl p-4 border border-[#eae1e0] text-center">
+          <div class="rounded-xl overflow-hidden mb-4 shadow-sm aspect-square bg-[#ffffff]">
+            <img loading="lazy" src="assets/12-antes-depois-labial.jpg" alt="Antes e depois - Preenchimento labial" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-serif text-lg font-bold text-[#712321]">
+            Preenchimento labial
+          </h3>
+          <p class="text-xs text-[#615858] mt-1">Com ácido hialurônico e anestesia no local</p>
+        </div>
+
+        <!-- Caso 2: Imagem 13 (mento perfil) -> DATA:IMAGE:IMAGE_6 -->
+        <div class="bg-[#faf6f5] rounded-2xl p-4 border border-[#eae1e0] text-center">
+          <div class="rounded-xl overflow-hidden mb-4 shadow-sm aspect-square bg-[#ffffff]">
+            <img loading="lazy" src="assets/13-antes-depois-mento.jpg" alt="Antes e depois - Preenchimento de mento" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-serif text-lg font-bold text-[#712321]">
+            Preenchimento de mento
+          </h3>
+          <p class="text-xs text-[#615858] mt-1">Mais projeção, definição e equilíbrio ao rosto</p>
+        </div>
+
+        <!-- Caso 3: Imagem 15 (bigode chinês) -> DATA:IMAGE:IMAGE_4 -->
+        <div class="bg-[#faf6f5] rounded-2xl p-4 border border-[#eae1e0] text-center">
+          <div class="rounded-xl overflow-hidden mb-4 shadow-sm aspect-square bg-[#ffffff]">
+            <img loading="lazy" src="assets/15-antes-depois-bigode-chines.jpg" alt="Antes e depois - Bigode chinês" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-serif text-lg font-bold text-[#712321]">
+            Bigode chinês
+          </h3>
+          <p class="text-xs text-[#615858] mt-1">Suaviza as linhas que vão do nariz ao canto da boca</p>
+        </div>
+
+      </div>
+
+      <!-- Legal disclaimer note (Verbatim) -->
+      <p class="text-center text-xs text-[#615858] italic mb-10">
+        Resultados variam de pessoa para pessoa.
+      </p>
+
+      <!-- Patient Quote (Verbatim) -->
+      <div class="max-w-xl mx-auto bg-[#f5ebeb]/60 border border-[#b17779]/30 rounded-2xl p-6 sm:p-8 text-center mb-12 shadow-sm">
+        <div class="text-[#b17779] text-3xl font-serif mb-2 leading-none">“</div>
+        <p class="font-serif text-lg sm:text-xl text-[#712321] italic leading-relaxed mb-4">
+          Gente eu amei meu resultado eu fiz queixo e lábio e ficou tudo perfeito eu amei o resultado sem contar que a doutora também é maravilhosa eu recomendo
+        </p>
+        <p class="text-xs font-semibold tracking-wide text-[#615858]">
+          — Denilde Maria · Avaliação no Google
+        </p>
+      </div>
+
+      <!-- Section CTA (Verbatim) -->
+      <div class="text-center">
+        <a href="https://wa.me/5562982778088?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn-cta px-8 py-4 rounded-full text-base sm:text-lg shadow-md gap-3">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>Agendar minha avaliação</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. "QUEM VAI CUIDAR DE VOCÊ" -->
+  <section class="py-16 lg:py-24 bg-[#faf6f5] border-b border-[#eae1e0]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
+        
+        <!-- Left photo: photo 02 (DATA:IMAGE:IMAGE_15) -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative w-full max-w-sm">
+            <div class="absolute inset-0 bg-[#b17779]/20 rounded-2xl rotate-2"></div>
+            <div class="relative z-10 bg-white p-2 rounded-2xl border border-[#eae1e0] shadow-md">
+              <img loading="lazy" src="assets/02-dra-thaynny-bracos-cruzados.png" alt="Thaynny de Paula Andrade, biomédica esteta" class="w-full h-auto rounded-xl object-cover">
+            </div>
+          </div>
+        </div>
+
+        <!-- Right description (Verbatim) -->
+        <div class="lg:col-span-7">
+          <span class="text-xs font-bold uppercase tracking-wider text-[#b17779] block mb-2">Responsabilidade técnica e carinho</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-[#712321] font-semibold mb-6">
+            Quem vai cuidar de você
+          </h2>
+          
+          <div class="p-6 rounded-2xl bg-white border border-[#eae1e0] shadow-sm mb-6">
+            <p class="font-serif text-xl sm:text-2xl text-[#712321] font-semibold leading-snug mb-3">
+              Thaynny de Paula Andrade, biomédica esteta (CRBM-3 8018), graduada em Biomedicina e pós-graduada em Saúde Estética.
+            </p>
+            <p class="text-sm sm:text-base text-[#615858] leading-relaxed">
+              Atua há mais de 9 anos em estética facial e corporal, em um espaço novo, aconchegante, reservado e confortável. Acreditamos na associação entre beleza e saúde.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 text-xs sm:text-sm text-[#615858]">
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-[#f5ebeb] text-[#712321] flex items-center justify-center font-bold text-xs">✓</span>
+              <span>Avaliação personalizada com a biomédica</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-[#f5ebeb] text-[#712321] flex items-center justify-center font-bold text-xs">✓</span>
+              <span>Anestesia no local nos preenchimentos</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-[#f5ebeb] text-[#712321] flex items-center justify-center font-bold text-xs">✓</span>
+              <span>Tratamentos faciais e corporais</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 rounded-full bg-[#f5ebeb] text-[#712321] flex items-center justify-center font-bold text-xs">✓</span>
+              <span>Nutricionista na equipe (CRN1 21786)</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Small strip of team-at-work photos 05, 10, 08 -> (DATA:IMAGE:IMAGE_12, DATA:IMAGE:IMAGE_9, DATA:IMAGE:IMAGE_10) -->
+      <div>
+        <h4 class="text-center font-serif text-lg font-semibold text-[#712321] mb-6">
+          A rotina da clínica
+        </h4>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          
+          <div class="rounded-xl overflow-hidden border border-[#eae1e0] shadow-sm bg-white aspect-[4/3]">
+            <img loading="lazy" src="assets/06-atendimento-facial-jaleco.jpg" alt="Profissional preparando procedimento facial" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+
+          <div class="rounded-xl overflow-hidden border border-[#eae1e0] shadow-sm bg-white aspect-[4/3]">
+            <img loading="lazy" src="assets/09-atendimento-corporal-sala.jpg" alt="Atendimento de estética corporal" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+
+          <div class="rounded-xl overflow-hidden border border-[#eae1e0] shadow-sm bg-white aspect-[4/3]">
+            <img loading="lazy" src="assets/07-atendimento-labial-equipe.jpg" alt="Avaliação para preenchimento labial" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. "COMO FUNCIONA" (3 numbered steps in a horizontal line) -->
+  <section class="py-16 lg:py-24 bg-white border-b border-[#eae1e0]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#b17779] block mb-2">Passo a passo</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-[#712321] font-semibold">
+          Como funciona
+        </h2>
+        <p class="mt-3 text-base text-[#615858]">
+          Do primeiro contato ao seu plano de tratamento.
+        </p>
+      </div>
+
+      <!-- 3 Numbered Steps in a horizontal line -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+        
+        <!-- Step 1 (Verbatim) -->
+        <div class="relative bg-[#faf6f5] rounded-2xl p-8 border border-[#eae1e0] shadow-sm text-center md:text-left flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-full bg-[#712321] text-white font-serif font-bold text-xl flex items-center justify-center mx-auto md:mx-0 mb-6 shadow-sm">
+              1
+            </div>
+            <h3 class="font-serif text-xl font-bold text-[#712321] mb-3">
+              Você chama no WhatsApp
+            </h3>
+            <p class="text-sm text-[#615858] leading-relaxed">
+              Conte o que te incomoda e escolha o melhor dia e horário para a sua avaliação.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 (Verbatim) -->
+        <div class="relative bg-[#faf6f5] rounded-2xl p-8 border border-[#eae1e0] shadow-sm text-center md:text-left flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-full bg-[#b17779] text-white font-serif font-bold text-xl flex items-center justify-center mx-auto md:mx-0 mb-6 shadow-sm">
+              2
+            </div>
+            <h3 class="font-serif text-xl font-bold text-[#712321] mb-3">
+              Avaliação com a biomédica
+            </h3>
+            <p class="text-sm text-[#615858] leading-relaxed">
+              Avaliação personalizada: a biomédica entende o seu objetivo e indica o caminho.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 3 (Verbatim) -->
+        <div class="relative bg-[#faf6f5] rounded-2xl p-8 border border-[#eae1e0] shadow-sm text-center md:text-left flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-full bg-[#712321] text-white font-serif font-bold text-xl flex items-center justify-center mx-auto md:mx-0 mb-6 shadow-sm">
+              3
+            </div>
+            <h3 class="font-serif text-xl font-bold text-[#712321] mb-3">
+              Plano de tratamento no seu ritmo
+            </h3>
+            <p class="text-sm text-[#615858] leading-relaxed">
+              Os valores são passados na avaliação, conforme o seu plano de tratamento.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. TESTIMONIALS -->
+  <section class="py-16 lg:py-24 bg-[#faf6f5] border-b border-[#eae1e0]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-14">
+        <!-- Verbatim Proof -->
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#f5ebeb] text-[#712321] text-sm font-semibold tracking-wide mb-3">
+          <span class="text-[#d06d65]">★</span>
+          <span>4,9 no Google · 320 avaliações</span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl text-[#712321] font-semibold">
+          Depoimentos de pacientes
+        </h2>
+      </div>
+
+      <!-- Two quotes (Verbatim) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+        
+        <!-- Quote 1 -->
+        <div class="bg-white p-8 rounded-2xl border border-[#eae1e0] shadow-sm flex flex-col justify-between relative">
+          <div class="text-[#b17779] text-3xl font-serif mb-2 leading-none">“</div>
+          <p class="font-serif text-lg text-[#212121] italic leading-relaxed mb-6">
+            Quero agradecer pelo excelente resultado e pelo atendimento impecável de toda a equipe. Fui tratada com profissionalismo, cuidado e muita atenção em cada detalhe.
+          </p>
+          <div class="flex items-center gap-3 pt-4 border-t border-[#eae1e0]">
+            <div class="w-10 h-10 rounded-full bg-[#f5ebeb] text-[#712321] font-bold text-sm flex items-center justify-center">
+              CS
+            </div>
+            <div>
+              <p class="text-sm font-bold text-[#712321]">Camila Silva</p>
+              <p class="text-xs text-[#615858]">Avaliação no Google</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quote 2 -->
+        <div class="bg-white p-8 rounded-2xl border border-[#eae1e0] shadow-sm flex flex-col justify-between relative">
+          <div class="text-[#b17779] text-3xl font-serif mb-2 leading-none">“</div>
+          <p class="font-serif text-lg text-[#212121] italic leading-relaxed mb-6">
+            Procurei a clínica com o objetivo de realizar um tratamento que pudesse amenizar as celulites (…) Desde a primeira consulta com a doutora, fui muito bem atendida e orientada em cada detalhe
+          </p>
+          <div class="flex items-center gap-3 pt-4 border-t border-[#eae1e0]">
+            <div class="w-10 h-10 rounded-full bg-[#f5ebeb] text-[#712321] font-bold text-sm flex items-center justify-center">
+              EG
+            </div>
+            <div>
+              <p class="text-sm font-bold text-[#712321]">Emilly Gonçalves</p>
+              <p class="text-xs text-[#615858]">Avaliação no Google</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA (Verbatim) -->
+      <div class="text-center">
+        <a href="https://wa.me/5562982778088?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn-cta px-8 py-4 rounded-full text-base sm:text-lg shadow-md gap-3">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>Agendar minha avaliação</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8. FAQ (accordion with verbatim questions) -->
+  <section class="py-16 lg:py-24 bg-white border-b border-[#eae1e0]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-14">
+        <span class="text-xs font-bold uppercase tracking-wider text-[#b17779] block mb-2">Esclarecendo suas dúvidas</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-[#712321] font-semibold">
+          Perguntas frequentes
+        </h2>
+        <p class="mt-3 text-base text-[#615858]">
+          Se a sua dúvida não estiver aqui, chame no WhatsApp.
+        </p>
+      </div>
+
+      <!-- Accordion items -->
+      <div class="space-y-4 mb-12">
+        
+        <!-- Q1: "Vai ficar natural?" -->
+        <details class="group bg-[#faf6f5] rounded-xl border border-[#eae1e0] p-5 transition-all">
+          <summary class="flex items-center justify-between cursor-pointer font-serif text-lg font-semibold text-[#712321] select-none">
+            <span>Vai ficar natural?</span>
+            <span class="w-7 h-7 rounded-full bg-[#f5ebeb] text-[#712321] flex items-center justify-center text-sm font-bold group-open:rotate-180 transition-transform">
+              ↓
+            </span>
+          </summary>
+          <div class="mt-4 pt-4 border-t border-[#eae1e0] text-sm sm:text-base text-[#615858] leading-relaxed">
+            O planejamento é feito na avaliação, de forma personalizada para o seu rosto. A ideia é realçar, sem exageros.
+          </div>
+        </details>
+
+        <!-- Q2: "Dói?" -->
+        <details class="group bg-[#faf6f5] rounded-xl border border-[#eae1e0] p-5 transition-all">
+          <summary class="flex items-center justify-between cursor-pointer font-serif text-lg font-semibold text-[#712321] select-none">
+            <span>Dói?</span>
+            <span class="w-7 h-7 rounded-full bg-[#f5ebeb] text-[#712321] flex items-center justify-center text-sm font-bold group-open:rotate-180 transition-transform">
+              ↓
+            </span>
+          </summary>
+          <div class="mt-4 pt-4 border-t border-[#eae1e0] text-sm sm:text-base text-[#615858] leading-relaxed">
+            Os preenchimentos são feitos com anestesia no local do procedimento. A criolipólise não é invasiva: não tem cortes nem agulhas.
+          </div>
+        </details>
+
+        <!-- Q3: "É seguro? Quem aplica?" -->
+        <details class="group bg-[#faf6f5] rounded-xl border border-[#eae1e0] p-5 transition-all">
+          <summary class="flex items-center justify-between cursor-pointer font-serif text-lg font-semibold text-[#712321] select-none">
+            <span>É seguro? Quem aplica?</span>
+            <span class="w-7 h-7 rounded-full bg-[#f5ebeb] text-[#712321] flex items-center justify-center text-sm font-bold group-open:rotate-180 transition-transform">
+              ↓
+            </span>
+          </summary>
+          <div class="mt-4 pt-4 border-t border-[#eae1e0] text-sm sm:text-base text-[#615858] leading-relaxed">
+            A responsável técnica é a Dra. Thaynny de Paula Andrade, biomédica esteta (CRBM-3 8018), graduada em Biomedicina e pós-graduada em Saúde Estética. Nos preenchimentos é usado ácido hialurônico, uma substância reversível.
+          </div>
+        </details>
+
+        <!-- Q4: "Quanto custa?" -->
+        <details class="group bg-[#faf6f5] rounded-xl border border-[#eae1e0] p-5 transition-all">
+          <summary class="flex items-center justify-between cursor-pointer font-serif text-lg font-semibold text-[#712321] select-none">
+            <span>Quanto custa?</span>
+            <span class="w-7 h-7 rounded-full bg-[#f5ebeb] text-[#712321] flex items-center justify-center text-sm font-bold group-open:rotate-180 transition-transform">
+              ↓
+            </span>
+          </summary>
+          <div class="mt-4 pt-4 border-t border-[#eae1e0] text-sm sm:text-base text-[#615858] leading-relaxed">
+            Os valores são passados na avaliação, conforme o seu plano de tratamento.
+          </div>
+        </details>
+
+        <!-- Q5: "Quando vejo o resultado?" -->
+        <details class="group bg-[#faf6f5] rounded-xl border border-[#eae1e0] p-5 transition-all">
+          <summary class="flex items-center justify-between cursor-pointer font-serif text-lg font-semibold text-[#712321] select-none">
+            <span>Quando vejo o resultado?</span>
+            <span class="w-7 h-7 rounded-full bg-[#f5ebeb] text-[#712321] flex items-center justify-center text-sm font-bold group-open:rotate-180 transition-transform">
+              ↓
+            </span>
+          </summary>
+          <div class="mt-4 pt-4 border-t border-[#eae1e0] text-sm sm:text-base text-[#615858] leading-relaxed">
+            Depende do tratamento. Na criolipólise, o resultado completo costuma ser avaliado depois de cerca de 2 a 3 meses. Para os outros procedimentos, a biomédica explica na avaliação o que esperar. Resultados variam de pessoa para pessoa.
+          </div>
+        </details>
+
+        <!-- Q6: "Não sei qual tratamento preciso. E agora?" -->
+        <details class="group bg-[#faf6f5] rounded-xl border border-[#eae1e0] p-5 transition-all">
+          <summary class="flex items-center justify-between cursor-pointer font-serif text-lg font-semibold text-[#712321] select-none">
+            <span>Não sei qual tratamento preciso. E agora?</span>
+            <span class="w-7 h-7 rounded-full bg-[#f5ebeb] text-[#712321] flex items-center justify-center text-sm font-bold group-open:rotate-180 transition-transform">
+              ↓
+            </span>
+          </summary>
+          <div class="mt-4 pt-4 border-t border-[#eae1e0] text-sm sm:text-base text-[#615858] leading-relaxed">
+            Não precisa chegar sabendo. Na avaliação, a gente entende o que te incomoda e indica o caminho.
+          </div>
+        </details>
+
+      </div>
+
+      <!-- Accordion CTA (Verbatim) -->
+      <div class="text-center">
+        <a href="https://wa.me/5562982778088?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn-cta px-8 py-4 rounded-full text-base sm:text-lg shadow-md gap-3">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>Agendar minha avaliação</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 9. LOCATION -->
+  <section id="localizacao" class="py-16 lg:py-24 bg-[#faf6f5] border-b border-[#eae1e0]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left details -->
+        <div class="lg:col-span-6">
+          <span class="text-xs font-bold uppercase tracking-wider text-[#b17779] block mb-2">Fácil acesso no Centro</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-[#712321] font-semibold mb-6">
+            Nossa localização
+          </h2>
+
+          <div class="space-y-4 mb-8 text-[#212121]">
+            <div class="flex items-start gap-3">
+              <svg class="w-5 h-5 mt-0.5 shrink-0 text-[#712321]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              <div>
+                <p class="font-semibold text-base sm:text-lg text-[#712321]">
+                  Av. Dom Abel Ribeiro, Quadra 30 - Lote 01 - Centro, Aparecida de Goiânia - GO, 74980-010
+                </p>
+                <p class="text-sm font-medium text-[#b17779] mt-1">
+                  A 700 m do Aparecida Shopping
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 pt-3 border-t border-[#eae1e0]">
+              <svg class="w-5 h-5 mt-0.5 shrink-0 text-[#712321]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <div>
+                <p class="font-semibold text-sm sm:text-base text-[#212121]">Horário de atendimento:</p>
+                <p class="text-sm text-[#615858]">Segunda a Sexta: 8h às 19h</p>
+                <p class="text-sm text-[#615858]">Sábado: 8h às 13h</p>
+                <p class="text-sm text-[#615858]">Domingo: fechado</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Outline button "Como chegar" (Secondary CTA) -->
+          <div>
+            <a href="https://maps.app.goo.gl/N3oSWw8PUgYJnmTdA" target="_blank" rel="noopener noreferrer" class="btn-outline-custom inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm">
+              <span>Como chegar</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Photo 03-fachada-clinica.jpg (DATA:IMAGE:IMAGE_14) + Simulated Map -->
+        <div class="lg:col-span-6 space-y-6">
+          
+          <!-- Clinic Facade photo -->
+          <div class="rounded-2xl overflow-hidden border border-[#eae1e0] shadow-sm bg-white">
+            <img loading="lazy" src="assets/03-fachada-clinica.jpg" alt="Fachada da clínica Dra. Thaynny de Paula Estética Avançada" class="w-full h-64 sm:h-72 object-cover">
+            <div class="p-3 bg-white text-xs text-center text-[#615858]">
+              Fachada da clínica, no Centro de Aparecida de Goiânia
+            </div>
+          </div>
+
+          <!-- Stylized map card -->
+          <div class="rounded-2xl overflow-hidden border border-[#eae1e0] bg-white p-4 shadow-sm flex items-center justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-[#f5ebeb] text-[#712321] flex items-center justify-center">
+                <svg class="w-5 h-5 shrink-0 text-[#712321]" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-[#712321]">Próximo ao Aparecida Shopping</p>
+                <p class="text-[11px] text-[#615858]">A 700 m, no Centro</p>
+              </div>
+            </div>
+            <a href="https://maps.app.goo.gl/N3oSWw8PUgYJnmTdA" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-[#712321] hover:underline">
+              Abrir no Google Maps →
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 10. FINAL CTA (burgundy band with white logo) -->
+  <section class="py-16 lg:py-20 bg-[#712321] text-white relative overflow-hidden">
+    <!-- Subtle background ornament -->
+    <div class="absolute -right-16 -bottom-16 w-80 h-80 rounded-full bg-[#551715] opacity-50 blur-2xl"></div>
+    
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      
+      <!-- Logo Branco in dark band -->
+      <div class="flex justify-center mb-8">
+        <img loading="lazy" src="assets/logo-branco.png" alt="Dra. Thaynny de Paula Estética Avançada" class="h-14 sm:h-16 w-auto object-contain">
+      </div>
+
+      <!-- Verbatim H2 -->
+      <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight mb-8 max-w-3xl mx-auto">
+        Seu rosto, do seu jeito — só que descansado.
+      </h2>
+
+      <!-- Primary CTA button -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://wa.me/5562982778088?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn-cta px-10 py-4 rounded-full text-base sm:text-lg shadow-xl gap-3">
+          <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>Agendar minha avaliação</span>
+        </a>
+      </div>
+      <p class="text-xs text-white/70 mt-4">
+        Atendimento pelo WhatsApp · Seg–Sex 8h–19h, Sáb 8h–13h
+      </p>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-[#eae1e0] py-10 text-xs text-[#615858]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+        
+        <div>
+          <p class="font-bold text-sm text-[#712321] mb-1 font-serif">Dra. Thaynny de Paula Estética Avançada</p>
+          <p>CNPJ 23.038.353/0001-86 · Responsável Técnica: CRBM-3 8018</p>
+          <p class="mt-0.5">Av. Dom Abel Ribeiro, Qd. 30 - Lt. 01 - Centro, Aparecida de Goiânia - GO, 74980-010</p>
+          <p class="mt-0.5">Seg–Sex 8h às 19h · Sáb 8h às 13h</p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+          <a href="tel:+5562982778088" class="text-[#712321] font-bold hover:underline">
+            (62) 98277-8088
+          </a>
+          <span class="hidden sm:inline text-[#eae1e0]">|</span>
+          <a href="tel:+556230941235" class="hover:text-[#712321]">
+            (62) 3094-1235
+          </a>
+          <span class="hidden sm:inline text-[#eae1e0]">|</span>
+          <a href="https://www.instagram.com/drathaynnydepaula/" target="_blank" rel="noopener noreferrer" class="hover:text-[#712321] flex items-center gap-1 font-semibold">
+            <span>Instagram</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-[#eae1e0] text-center text-[11px] text-[#615858]">
+        © 2026 Dra. Thaynny de Paula Estética Avançada. Todos os direitos reservados.<br>
+        Proposta de layout · não é o site oficial da Dra. Thaynny de Paula Estética Avançada
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE FIXED ELEMENTS -->
+  <!-- 1. Floating WhatsApp Button (Bottom-Right) -->
+  <a href="https://wa.me/5562982778088?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="md:hidden fixed bottom-20 right-4 z-50 w-14 h-14 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg active:scale-95 transition-transform" aria-label="Falar no WhatsApp">
+    <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+  </a>
+
+  <!-- 2. Sticky Bottom Bar with Primary CTA -->
+  <div class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur border-t border-[#eae1e0] p-3 shadow-lg flex items-center justify-between gap-3">
+    <div class="flex-1">
+      <p class="text-xs font-bold text-[#712321] leading-tight">Avaliação Presencial</p>
+      <p class="text-[11px] text-[#615858]">Seg–Sex 8h–19h, Sáb 8h–13h</p>
+    </div>
+    <a href="https://wa.me/5562982778088?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn-cta px-5 py-2.5 rounded-full text-xs shadow-md">
+      Agendar minha avaliação
+    </a>
+  </div>
+
+</body>
+</html>
